@@ -6,7 +6,7 @@
                 "organizeImports": "on"
             }
         }
-    },  
+    },
     "files": {
         "includes": ["**", "!**/*.astro"]
     },

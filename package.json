@@ -1,13 +1,29 @@
 {
-  "name": "@cumuloworks/configs",
-  "version": "1.0.2",
-  "description": "Shared development configs for multiple projects",
-  "homepage": "https://github.com/cumuloworks/configs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cumuloworks/configs.git"
-  },
-  "license": "MIT",
-  "author": "Tomoya Eguchi",
-  "type": "module"
+    "name": "@cumuloworks/configs",
+    "version": "1.0.2",
+    "description": "Shared development configs for multiple projects",
+    "homepage": "https://github.com/cumuloworks/configs",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cumuloworks/configs.git"
+    },
+    "license": "MIT",
+    "author": "Tomoya Eguchi",
+    "type": "module",
+    "scripts": {
+        "prepare": "husky",
+        "check": "biome check .",
+        "fix": "biome check --write .",
+        "fix:unsafe": "biome check --write --unsafe ."
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.1.3",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.4"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,json,jsonc}": [
+            "biome check --write"
+        ]
+    }
 }
