@@ -6,6 +6,9 @@
                 "organizeImports": "on"
             }
         }
+    },  
+    "files": {
+        "includes": ["**", "!**/*.astro"]
     },
     "linter": {
         "enabled": true,
