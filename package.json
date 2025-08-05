@@ -1,6 +1,6 @@
 {
   "name": "@cumuloworks/configs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared development configs for multiple projects",
   "homepage": "https://github.com/cumuloworks/configs",
   "repository": {
