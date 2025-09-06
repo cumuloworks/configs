@@ -1,7 +1,7 @@
 {
     "name": "@cumuloworks/configs",
     "version": "1.0.5",
-    "description": "Shared development configs for multiple projects",
+    "description": "Cumuloworks' shared development configs for multiple projects",
     "homepage": "https://github.com/cumuloworks/configs",
     "repository": {
         "type": "git",
@@ -10,6 +10,29 @@
     "license": "MIT",
     "author": "Tomoya Eguchi",
     "type": "module",
+    "files": [
+        "biome.json",
+        ".markdownlint.json",
+        "README.md"
+    ],
+    "keywords": [
+        "biome",
+        "formatter",
+        "linter",
+        "config"
+    ],
+    "bugs": {
+        "url": "https://github.com/cumuloworks/configs/issues"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        "./biome": "./biome.json"
+    },
     "scripts": {
         "prepare": "husky",
         "check": "biome check .",
