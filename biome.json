@@ -1,14 +1,11 @@
 {
-    "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
+    "$schema": "https://biomejs.dev/schemas/2.2.3/schema.json",
     "assist": {
         "actions": {
             "source": {
                 "organizeImports": "on"
             }
         }
-    },
-    "files": {
-        "includes": ["**", "!**/*.astro"]
     },
     "linter": {
         "enabled": true,
@@ -52,5 +49,28 @@
             "trailingCommas": "es5",
             "semicolons": "always"
         }
-    }
+    },
+    "overrides": [
+        {
+            "includes": ["**/*.astro"],
+            "linter": {
+                "rules": {
+                    "correctness": {
+                        "noUnusedImports": "off",
+                        "noUnusedVariables": "off"
+                    }
+                }
+            }
+        },
+        {
+            "includes": ["**/*.css"],
+            "linter": {
+                "rules": {
+                    "suspicious": {
+                        "noUnknownAtRules": "off"
+                    }
+                }
+            }
+        }
+    ]
 }
