@@ -41,7 +41,7 @@
         "enabled": true,
         "indentStyle": "space",
         "indentWidth": 4,
-        "lineWidth": 240
+        "lineWidth": 120
     },
     "javascript": {
         "formatter": {
