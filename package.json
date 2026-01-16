@@ -1,52 +1,52 @@
 {
-    "name": "@cumuloworks/configs",
-    "version": "1.1.2",
-    "description": "Cumuloworks' shared development configs for multiple projects",
-    "homepage": "https://github.com/cumuloworks/configs",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cumuloworks/configs.git"
-    },
-    "license": "MIT",
-    "author": "Tomoya Eguchi",
-    "type": "module",
-    "files": [
-        "biome.json",
-        ".markdownlint.json",
-        "README.md"
-    ],
-    "keywords": [
-        "biome",
-        "formatter",
-        "linter",
-        "config"
-    ],
-    "bugs": {
-        "url": "https://github.com/cumuloworks/configs/issues"
-    },
-    "engines": {
-        "node": ">=18"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "exports": {
-        "./biome": "./biome.json"
-    },
-    "scripts": {
-        "prepare": "husky",
-        "check": "biome check .",
-        "fix": "biome check --write .",
-        "fix:unsafe": "biome check --write --unsafe ."
-    },
-    "devDependencies": {
-        "@biomejs/biome": "^2.3.10",
-        "husky": "^9.1.7",
-        "lint-staged": "^16.2.7"
-    },
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx,json,jsonc}": [
-            "biome check --write"
-        ]
-    }
+  "name": "@cumuloworks/configs",
+  "version": "2.0.0",
+  "description": "Cumuloworks' shared development configs for multiple projects",
+  "homepage": "https://github.com/cumuloworks/configs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cumuloworks/configs.git"
+  },
+  "license": "MIT",
+  "author": "Tomoya Eguchi",
+  "type": "module",
+  "files": [
+    "biome.json",
+    ".markdownlint.json",
+    "README.md"
+  ],
+  "keywords": [
+    "biome",
+    "formatter",
+    "linter",
+    "config"
+  ],
+  "bugs": {
+    "url": "https://github.com/cumuloworks/configs/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./biome": "./biome.json"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "check": "biome check .",
+    "fix": "biome check --write .",
+    "fix:unsafe": "biome check --write --unsafe ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.10",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc}": [
+      "biome check --write"
+    ]
+  }
 }
